@@ -1,0 +1,9 @@
+<h1>All makes</h1>
+
+<% @makes.each do |make| %>
+    <p>
+        <a href="/makes/<%= make.id %>">
+            <%= make.name %>
+        </a>
+    </p>
+<% end %>

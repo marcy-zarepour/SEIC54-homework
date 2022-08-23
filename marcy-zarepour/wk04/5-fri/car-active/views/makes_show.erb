@@ -1,0 +1,12 @@
+<h1>
+    <%= @make.name %>
+</h1>
+
+<% unless @make.image.nil? || @make.image.empty? %>
+    <img class="feature" src="<%= @make.image %>" alt="<%= @make.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/makes/<%= @make.id %>/edit">Edit make</a>
+    <a href="/makes/<%= @make.id %>/delete">Delete make</a>
+</div>

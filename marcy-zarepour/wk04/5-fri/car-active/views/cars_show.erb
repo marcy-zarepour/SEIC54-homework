@@ -1,0 +1,14 @@
+<h1>
+    <%= @car["name"] %>
+</h1>
+<h2>
+    Color: <em><%= @car["color"] %></em>
+</h2>
+<% unless @car["image"].nil? || @car["image"].empty? %>
+<img class="feature" src="<%= @car["image"] %>" alt="<%= @car["name"]%>" >
+<% end %>
+
+<div class="controls">
+<a href="/cars/<%= @car["id"] %>/edit">Edit car</a>
+<a href="/cars/<%= @car["id"] %>/delete">Delete car</a>
+</div>

@@ -1,0 +1,16 @@
+<h1>Edit Make</h1>
+
+<form action="/makes/<%= @make.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @make.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @make.image %>">
+    </label>
+
+    <button>Update Make</button>
+</form>
+

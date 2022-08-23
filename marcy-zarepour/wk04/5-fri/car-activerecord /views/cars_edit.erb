@@ -1,0 +1,19 @@
+<h1>EDIT CAR</h1>
+<form action="/cars/<%= @car["id"] %>" method = "post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @car["name"]%>">
+    </label>
+
+    <label>
+        Model:
+        <input name="model" value="<%= @car["model"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type ="url"  name="image" value="<%= @car["image"] %>">
+    </label>
+
+<button>Update Car</button>
+</form>
